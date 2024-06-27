@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+---Light-Cyan: hsl(193, 38%, 86%);
+---Neon-Green: hsl(150, 100%, 66%);
+---Grayish-Blue: hsl(217, 19%, 38%);
+---Dark-Grayish-Blue: hsl(217, 19%, 24%);
+---Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(---Dark-Blue);
+  color: var(---Light-Cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  background-color: var(---Grayish-Blue);
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 10px 15px var(---Dark-Blue);
+  max-width: 400px;
+  margin: 20px;
+  position: relative; /* Add this */
+}
+
+.advice-id {
+  color: var(---Neon-Green);
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.advice {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.divider{
+  width: 100%;
+  padding-top: 10px;
+  margin: 20px 0;
+}
+
+.dice-button {
+  background-color: var(---Neon-Green);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px var(---Neon-Green);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dice-button:hover {
+  background-color: var(---Neon-Green);
+  box-shadow: 0 0 30px var(---Neon-Green);
+}
+
+.dice-button:active {
+  transform: translateY(2px);
+}
+
+.dice-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.dice-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  background-color:var(---Neon-Green);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  z-index: -1;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.dice-button:hover::before {
+  filter: blur(15px);
+  opacity: 0.8;
+}
