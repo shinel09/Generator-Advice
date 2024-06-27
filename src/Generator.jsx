@@ -25,7 +25,7 @@ function App() {
       <div className="card">
         <h1 className="advice-id">ADVICE #{adviceId}</h1>
         <p className="advice">{advice}</p>
-        <img className='divider' src="/src/advice-generator-app-main/images/pattern-divider-desktop.svg" alt="" />
+        <img className='divider' src="/src/advice-generator-app-main/images/pattern-divider-mobile.svg" alt="" />
         <button className="dice-button" onClick={fetchAdvice}>
           <img src="/src/advice-generator-app-main/images/icon-dice.svg" alt="Dice Icon" />
         </button>

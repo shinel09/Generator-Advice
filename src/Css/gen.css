@@ -40,7 +40,7 @@ body {
   box-shadow: 0 10px 15px var(---Dark-Blue);
   max-width: 400px;
   margin: 20px;
-  position: relative; /* Add this */
+  position: relative;
 }
 
 .advice-id {
